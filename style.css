@@ -220,15 +220,9 @@ footer p {
   background: #25D366;
   color: white;
 }
-footer a {
-  color: rgb(152, 154, 144); /* mesma cor do texto */
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: var(--gold-light); /* dourado só no hover */
-}
+/* ===== RESPONSIVO ===== */
 @media (max-width: 768px) {
+
   footer {
     padding: 10px 8px;
     font-size: 13px;
@@ -238,10 +232,17 @@ footer a:hover {
     line-height: 1.4;
   }
 
-/* RESPONSIVO */
-@media (max-width: 768px) {
   .cards {
-    flex-direction: column;
+    grid-template-columns: 1fr; 
   }
-}
+
+  .hero {
+    height: 60vh;
+    padding: 0 10px;
+  }
+
+  .hero-text h2 {
+    font-size: 1.4rem;
+  }
+
 }
