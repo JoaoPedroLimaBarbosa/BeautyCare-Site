@@ -20,8 +20,6 @@ São Luís - Maranhão, Brasil
 💡 Objetivo do projeto:
 Criar um site institucional simples, bonito e funcional para ajudar o salão a atrair mais clientes e fortalecer sua presença online.
 
-🔗 Acesse o site:
-(Coloque aqui o link do seu site com domínio ou GitHub Pages)
 
 ---
 
