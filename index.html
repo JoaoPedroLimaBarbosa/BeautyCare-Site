@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salão Beauty Care em São Luís | Cabelo, unhas e estética</title>
+  <meta name="description" content="Salão Beauty Care em São Luís. Serviços de cabelo, maquiagem, depilação, unhas e estética. Agende seu horário!">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <link rel="icon" href="favicons/favicon.png">
+  <link rel="apple-touch-icon" href="favicons/favicon.png">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>
+      <!-- CORREÇÃO 4 -->
+      <a href="/">Beauty Care</a>
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section id="inicio" class="hero">
+  <div class="hero-text">
+    <h2>Realce sua beleza com elegância</h2>
+    <p>Cuidado profissional para você se sentir ainda mais linda.</p>
+    <a href="https://wa.me/5511982227050" class="btn" target="_blank">
+      Agendar meu horário
+    </a>
+  </div>
+</section>
+
+<section id="servicos" class="servicos">
+  <h2>Nossos Serviços</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Unhas</h3>
+      <p>Cuidados completos e decoração profissional</p>
+    </div>
+    <div class="card">
+      <h3>Cabelo</h3>
+      <p>Cortes, Escovas, Penteados, Botox e Selagem Capilar, Mechas, Reconstruções. realizados por profissionais qualificados, garantindo estilo, cuidado e resultados incríveis.</p>
+    </div>
+    <div class="card">
+      <h3>Depilação</h3>
+      <p>Depilação com técnicas seguras e eficientes, proporcionando conforto, higiene e uma pele lisa por mais tempo.</p>
+    </div>
+    <div class="card">
+      <h3>Estética</h3>
+      <p>Tratamentos estéticos personalizados para cuidados com a pele e bem-estar, promovendo saúde, beleza e autoestima.</p>
+    </div>
+    <div class="card">
+      <h3>Maquiagem</h3>
+      <p>Maquiagens para eventos, festas e dia a dia, realçando seus traços com elegância, durabilidade e acabamento impecável.</p>
+    </div>
+  </div>
+</section>
+
+<section class="galeria">
+  <h2>Galeria</h2>
+  <div class="grid">
+    <!-- CORREÇÃO 5 -->
+    <img src="img/foto1.JPG" alt="Unhas decoradas Beauty Care">
+    <img src="img/foto2.JPG" alt="Cabelo profissional Beauty Care">
+    <img src="img/foto3.JPG" alt="Maquiagem Beauty Care">
+    <img src="img/foto4.JPG" alt="Depilação Beauty Care">
+    <img src="img/foto5.JPG" alt="Estética facial Beauty Care">
+    <img src="img/foto6.JPG" alt="Unhas gel Beauty Care">
+    <img src="img/foto7.JPG" alt="Corte feminino Beauty Care">
+    <img src="img/foto8.JPG" alt="Resultado salão Beauty Care">
+  </div>
+</section>
+
+<section id="sobre" class="sobre">
+  <h2>Sobre Nós</h2>
+  <p>
+    O Beauty Care oferece serviços de beleza com qualidade, conforto e um atendimento especializado.
+    Nosso objetivo é valorizar a autoestima e proporcionar uma experiência única para cada cliente.
+  </p>
+</section>
+
+<section id="contato" class="contato">
+  <h2>Contato</h2>
+  <p>📍 São Luís Shopping – MA <br>Piso Térreo, próximo às Lojas Americanas</p>
+  <p>🕒 Seg a Sáb: 10h às 22h | Dom: 13h às 21h</p>
+
+  <p>📸 Instagram:
+    <a href="https://instagram.com/beautycareslz" target="_blank">
+      @beautycareslz
+    </a>
+  </p>
+
+  <p>📱 WhatsApp:
+    <a href="https://wa.me/5511982227050" target="_blank">
+      Fale conosco agora
+    </a>
+  </p>
+
+  <iframe src="https://www.google.com/maps?q=São%20Luís%20Shopping&output=embed"></iframe>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Beauty Care - Todos os direitos reservados</p>
+  <p>
+    desenvolvido por 
+    <a href="https://instagram.com/joaopedrojp_15" target="_blank">
+      @joaopedrojp_15
+    </a>
+  </p>
+</footer>
+
+<a href="https://wa.me/5511982227050" class="whatsapp-float" target="_blank">💬</a>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  
+    // SLIDE DO HERO
+    const imagensHero = [
+      "img/estrutura.PNG",
+      "img/foto1.JPG",
+      "img/foto2.JPG",
+      "img/foto3.JPG"
+    ];
+  
+    let index = 0;
+    const hero = document.querySelector(".hero");
+  
+    setInterval(() => {
+      index = (index + 1) % imagensHero.length;
+      hero.style.background = `url(${imagensHero[index]}) center/cover no-repeat`;
+    }, 4000);
+  
+  
+    // GALERIA
+    const imagensGrid = document.querySelectorAll(".grid img");
+    const lightbox = document.getElementById("lightbox");
+    const imgGrande = document.getElementById("img-grande");
+    const fechar = document.querySelector(".fechar");
+  
+    if (!lightbox || !imgGrande || !fechar) return;
+  
+    imagensGrid.forEach(img => {
+      img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        imgGrande.src = img.src;
+      });
+    });
+  
+    fechar.onclick = () => {
+      lightbox.style.display = "none";
+    };
+  
+    lightbox.onclick = (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = "none";
+      }
+    };
+  
+  });
+  </script>
+
+<div id="lightbox" class="lightbox">
+  <span class="fechar">&times;</span>
+  <img id="img-grande">
+</div>
+
+</body>
+</html>
