@@ -210,6 +210,10 @@ footer p {
   margin: 5px 0; /* controla espaçamento */
 }
 
+section {
+  scroll-margin-top: 100px;
+}
+
 /* WHATSAPP */
 .whatsapp-float {
   position: fixed;
