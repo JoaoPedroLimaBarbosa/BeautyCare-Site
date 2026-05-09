@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Care — Salão de Beleza em São Luís, MA</title>
+
+  <meta name="description" content="Beauty Care — O salão mais sofisticado de São Luís. Cabelo, unhas, maquiagem, depilação e estética com profissionais premiados.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://beautycareslz.com.br">
+  <meta property="og:title" content="Beauty Care">
+  <meta property="og:description" content="Salão premium em São Luís">
+  <meta property="og:image" content="img/logo.webp">
+  <meta property="og:site_name" content="Beauty Care">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="keywords" content="salão de beleza, unhas, maquiagem, estética, São Luís">
+  <meta name="theme-color" content="#B8973A">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@200;300;400;500&family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="favicons/favicon.png">
+  <link rel="apple-touch-icon" href="favicons/favicon.png">
+</head>
+<body>
+
+<!-- MOBILE NAV -->
+<div class="mob-nav" id="mobNav">
+  <button id="mobClose" aria-label="Fechar menu">✕</button>
+  <a href="#inicio" class="mob-link">Início</a>
+  <a href="#servicos" class="mob-link">Serviços</a>
+  <a href="#galeria" class="mob-link">Galeria</a>
+  <a href="#sobre" class="mob-link">Sobre</a>
+  <a href="#contato" class="mob-link">Contato</a>
+</div>
+
+<!-- HEADER -->
+<header id="hdr">
+  <a href="#inicio" class="logo-wrap">
+    <div class="logo-img-wrap">
+      <img src="img/logo.webp" alt="Beauty Care Logo" id="headerLogo">
+    </div>
+    <div class="logo-text">
+      <div class="logo-main">Beauty Care</div>
+      <div class="logo-sub">Salão de Beleza · São Luís, MA</div>
+    </div>
+  </a>
+  <nav>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+  <a href="https://wa.me/5511982227050" class="nav-cta" target="_blank" rel="noopener">Agendar</a>
+  <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+  <div class="hero-slides" id="heroSlides">
+    <div class="hero-slide active"></div>
+    <div class="hero-slide"></div>
+    <div class="hero-slide"></div>
+    <div class="hero-slide"></div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-dots">
+    <div class="hero-dot active" data-i="0"></div>
+    <div class="hero-dot" data-i="1"></div>
+    <div class="hero-dot" data-i="2"></div>
+    <div class="hero-dot" data-i="3"></div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Salão de Beleza · São Luís — MA</p>
+    <h1 class="hero-title">Realce sua beleza<em>com elegância</em></h1>
+    <div class="hero-line"></div>
+    <p class="hero-sub">Cuidado profissional, ambiente sofisticado e resultados que fazem você se sentir única.</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/5511982227050" class="btn-primary" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.109 1.51 5.841L.057 23.52a.75.75 0 00.924.924l5.704-1.453A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.953-1.355l-.355-.211-3.684.939.955-3.595-.232-.37A9.712 9.712 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+        Agendar Horário
+      </a>
+      <a href="#servicos" class="btn-ghost">Ver Serviços</a>
+    </div>
+  </div>
+  <div class="scroll-ind">
+    <span>Scroll</span>
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="strip-item"><div class="strip-num" id="c1">0</div><div class="strip-label">Clientes Atendidas</div></div>
+  <div class="strip-item"><div class="strip-num" id="c2">0</div><div class="strip-label">Anos de Experiência</div></div>
+  <div class="strip-item"><div class="strip-num" id="c3">0</div><div class="strip-label">Serviços Disponíveis</div></div>
+  <div class="strip-item"><div class="strip-num" id="c4">0</div><div class="strip-label">Avaliações 5 Estrelas</div></div>
+</div>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <div class="marquee-item">Beauty Care</div><div class="marquee-item">Cabelo & Beleza</div><div class="marquee-item">São Luís Shopping</div><div class="marquee-item">Unhas Premium</div><div class="marquee-item">Maquiagem Artística</div><div class="marquee-item">Estética Avançada</div><div class="marquee-item">Depilação Suave</div><div class="marquee-item">Realce Sua Beleza</div>
+    <div class="marquee-item">Beauty Care</div><div class="marquee-item">Cabelo & Beleza</div><div class="marquee-item">São Luís Shopping</div><div class="marquee-item">Unhas Premium</div><div class="marquee-item">Maquiagem Artística</div><div class="marquee-item">Estética Avançada</div><div class="marquee-item">Depilação Suave</div><div class="marquee-item">Realce Sua Beleza</div>
+  </div>
+</div>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="servicos">
+  <div class="section-head reveal">
+    <div class="tag">O que oferecemos</div>
+    <h2>Nossos <em style="color:var(--gold);font-style:italic">Serviços</em></h2>
+    <p>Cada serviço pensado para realçar o que há de mais belo em você.</p>
+  </div>
+  <div class="services-grid">
+
+    <!-- CARD 01 — Unhas -->
+    <div class="svc-card reveal" style="transition-delay:.08s">
+      <div class="svc-img-wrap">
+        <img src="img/unha.webp" alt="Serviço de Unhas" loading="lazy" decoding="async">
+      </div>
+      <div class="svc-body">
+        <div class="svc-header">
+          <span class="svc-icon">💅</span>
+          <span class="svc-num">01</span>
+        </div>
+        <h3>Unhas</h3>
+        <p>Esmaltação em gel, alongamento, nail art e decoração profissional para mãos e pés impecáveis.</p>
+        <a href="https://wa.me/5511982227050" class="svc-arrow" target="_blank" rel="noopener">
+          Agendar <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- CARD 02 — Cabelo -->
+    <div class="svc-card reveal" style="transition-delay:.14s">
+      <div class="svc-img-wrap">
+        <img src="img/lavagem.webp" alt="Serviço de Cabelo" loading="lazy" decoding="async">
+      </div>
+      <div class="svc-body">
+        <div class="svc-header">
+          <span class="svc-icon">✂️</span>
+          <span class="svc-num">02</span>
+        </div>
+        <h3>Cabelo</h3>
+        <p>Cortes, escovas, penteados, botox capilar, selagem, mechas e reconstruções por especialistas.</p>
+        <a href="https://wa.me/5511982227050" class="svc-arrow" target="_blank" rel="noopener">
+          Agendar <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- CARD 03 — Depilação -->
+    <div class="svc-card reveal" style="transition-delay:.2s">
+      <div class="svc-img-wrap">
+        <img src="img/cera.webp" alt="Serviço de Depilação" loading="lazy" decoding="async" style="object-position: center top;">      </div>
+      <div class="svc-body">
+        <div class="svc-header">
+          <span class="svc-icon">✨</span>
+          <span class="svc-num">03</span>
+        </div>
+        <h3>Depilação</h3>
+        <p>Técnicas seguras com cera e linha, proporcionando conforto, higiene e pele lisa por muito mais tempo.</p>
+        <a href="https://wa.me/5511982227050" class="svc-arrow" target="_blank" rel="noopener">
+          Agendar <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- CARD 04 — Estética -->
+    <div class="svc-card reveal" style="transition-delay:.26s">
+      <div class="svc-img-wrap">
+        <img src="img/sobrancelha.webp" alt="Serviço de Estética" loading="lazy" decoding="async">
+      </div>
+      <div class="svc-body">
+        <div class="svc-header">
+          <span class="svc-icon">🌿</span>
+          <span class="svc-num">04</span>
+        </div>
+        <h3>Estética</h3>
+        <p>Tratamentos faciais e corporais personalizados para cuidados com a pele, bem-estar e autoestima.</p>
+        <a href="https://wa.me/5511982227050" class="svc-arrow" target="_blank" rel="noopener">
+          Agendar <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- CARD 05 — Maquiagem -->
+    <div class="svc-card reveal" style="transition-delay:.32s">
+      <div class="svc-img-wrap">
+        <img src="img/maquiagem.webp" alt="Serviço de Maquiagem" loading="lazy" decoding="async">
+      </div>
+      <div class="svc-body">
+        <div class="svc-header">
+          <span class="svc-icon">💄</span>
+          <span class="svc-num">05</span>
+        </div>
+        <h3>Maquiagem</h3>
+        <p>Make para eventos, festas e dia a dia. Realçamos seus traços com elegância e acabamento impecável.</p>
+        <a href="https://wa.me/5511982227050" class="svc-arrow" target="_blank" rel="noopener">
+          Agendar <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="sobre-wrap">
+  <div class="sobre">
+    <div class="sobre-visual">
+      <div class="sobre-frame">
+        <img
+          src="img/estrutura4.webp"
+          alt="Beauty Care — Equipe e Ambiente"
+          loading="lazy"
+          decoding="async"
+          style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block;"
+        >
+      </div>
+      <div class="sobre-badge">
+        <span class="sobre-badge-num">8+</span>
+        <span class="sobre-badge-txt">Anos de<br>Experiência</span>
+      </div>
+    </div>
+    <div class="sobre-text reveal">
+      <div class="tag" style="justify-content:flex-start">Quem Somos</div>
+      <h2>Mais que um salão,<br><em style="color:var(--gold)">uma experiência</em></h2>
+      <div class="sobre-divider"></div>
+      <p>O <strong>Beauty Care</strong> nasceu com uma missão clara: elevar o padrão dos salões de beleza em São Luís. Localizado no coração do São Luís Shopping, cada detalhe foi pensado para o seu conforto.</p>
+      <p>Nossa equipe de profissionais certificados está sempre atualizada com as <strong>últimas tendências</strong> e técnicas do mercado da beleza, garantindo resultados que superam expectativas.</p>
+      <div class="sobre-feats">
+        <div class="feat"><div class="feat-dot"></div>Profissionais certificados</div>
+        <div class="feat"><div class="feat-dot"></div>Produtos premium</div>
+        <div class="feat"><div class="feat-dot"></div>Ambiente climatizado</div>
+        <div class="feat"><div class="feat-dot"></div>Agenda online</div>
+        <div class="feat"><div class="feat-dot"></div>Atendimento VIP</div>
+        <div class="feat"><div class="feat-dot"></div>Localização privilegiada</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria" class="galeria">
+  <div class="section-head reveal">
+    <div class="tag">Nosso Trabalho</div>
+    <h2>Galeria de <em style="color:var(--gold);font-style:italic">Beleza</em></h2>
+    <p>Uma amostra do que criamos todos os dias para nossas clientes.</p>
+  </div>
+  <div class="gallery-grid reveal">
+    <div class="g-item tall">
+      <img src="img/unha.webp" alt="Unhas Beauty Care" loading="lazy" decoding="async">
+  
+    </div>
+    <div class="g-item">
+      <img src="img/lavagem.webp" alt="Cabelo Beauty Care" loading="lazy" decoding="async">
+     
+    </div>
+    <div class="g-item">
+      <img src="img/cera.webp" alt="Depilação Beauty Care" loading="lazy" decoding="async">
+      
+    </div>
+    <div class="g-item wide">
+      <img src="img/maquiagem.webp" alt="Maquiagem Beauty Care" loading="lazy" decoding="async">
+      
+    </div>
+    <div class="g-item">
+      <img src="img/sobrancelha.webp" alt="Sobrancelha Beauty Care" loading="lazy" decoding="async">
+      
+    </div>
+    <div class="g-item">
+      <img src="img/unhaM.webp" alt="Unhas Beauty Care" loading="lazy" decoding="async">
+      
+    </div>
+    <div class="g-item">
+      <img src="img/cabelo1.webp" alt="Cabelo Beauty Care" loading="lazy" decoding="async">
+     
+    </div>
+    <div class="g-item tall">
+      <img src="img/unhaP.webp" alt="Resultado Premium Beauty Care" loading="lazy" decoding="async">
+      
+    </div>
+  </div>
+</section>
+
+<!-- TESTEMUNHOS -->
+<section class="testemunhos">
+  <div class="section-head reveal">
+    <div class="tag">O que dizem sobre nós</div>
+    <h2>Clientes <em style="color:var(--gold);font-style:italic">Satisfeitas</em></h2>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card reveal" style="transition-delay:.1s">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">Melhor salão de São Luís! Fiz unhas em gel e ficou perfeito. O atendimento é impecável, ambiente lindo e profissionais super qualificados. Não troco por nada!</p>
+      <div class="review-author"><div class="review-avatar">A</div><div><div class="review-name">Ana Beatriz</div><div class="review-since">Cliente Fiel</div></div></div>
+    </div>
+    <div class="review-card reveal" style="transition-delay:.2s">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">Fiz minha maquiagem para o casamento aqui e me senti uma princesa. A profissional entendeu exatamente o que eu queria. Recomendo de olhos fechados!</p>
+      <div class="review-author"><div class="review-avatar">J</div><div><div class="review-name">Juliana Ramos</div><div class="review-since">Cliente Premium</div></div></div>
+    </div>
+    <div class="review-card reveal" style="transition-delay:.3s">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">Vim fazer botox capilar e o resultado superou todas as minhas expectativas. Cabelo sedoso, brilhante e profissional extremamente atenciosa. Voltarei sempre!</p>
+      <div class="review-author"><div class="review-avatar">F</div><div><div class="review-name">Fernanda Silva</div><div class="review-since">Cliente VIP</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="contato">
+  <div class="section-head reveal">
+    <div class="tag">Fale Conosco</div>
+    <h2>Onde nos <em style="color:var(--gold);font-style:italic">Encontrar</em></h2>
+  </div>
+  <div class="contato-inner">
+    <div class="reveal">
+      <div class="info-list">
+        <div class="info-row">
+          <div class="info-icon-box">📍</div>
+          <div><div class="info-label">Endereço</div><div class="info-val">São Luís Shopping — Piso Térreo<br>Próximo às Lojas Americanas</div></div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon-box">🕒</div>
+          <div><div class="info-label">Horário de Funcionamento</div><div class="info-val">Segunda a Sábado: 10h às 22h<br>Domingo: 13h às 21h</div></div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon-box">📱</div>
+          <div><div class="info-label">WhatsApp</div><div class="info-val"><a href="https://wa.me/5511982227050" target="_blank" rel="noopener">Fale conosco agora →</a></div></div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon-box">📸</div>
+          <div><div class="info-label">Instagram</div><div class="info-val"><a href="https://instagram.com/beautycareslz" target="_blank" rel="noopener">@beautycareslz →</a></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="mapa-box reveal" style="transition-delay:.2s">
+      <iframe src="https://www.google.com/maps?q=São+Luís+Shopping,+São+Luís,+MA&output=embed" title="Localização Beauty Care" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="tag reveal">Pronta para se sentir linda?</div>
+  <h2 class="reveal" style="transition-delay:.1s">Agende sua visita <em>hoje</em></h2>
+  <p class="reveal" style="transition-delay:.2s">Garanta seu horário e venha viver a experiência Beauty Care. Sua beleza é nossa especialidade.</p>
+  <div class="reveal" style="transition-delay:.3s">
+    <a href="https://wa.me/5511982227050" class="btn-primary" target="_blank" rel="noopener" style="font-size:.72rem;padding:17px 44px;display:inline-flex;align-items:center;gap:12px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.109 1.51 5.841L.057 23.52a.75.75 0 00.924.924l5.704-1.453A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.953-1.355l-.355-.211-3.684.939.955-3.595-.232-.37A9.712 9.712 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+      Agendar pelo WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-logo">Beauty Care</div>
+  <div class="ft-copy">
+    <p>© 2026 Beauty Care · Todos os direitos reservados</p>
+    <p>Desenvolvido por <a href="https://instagram.com/joaopedrojp_15" target="_blank" rel="noopener">@joaopedrojp_15</a></p>
+  </div>
+  <div class="ft-social">
+    <a href="https://instagram.com/beautycareslz" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    </a>
+    <a href="https://wa.me/5511982227050" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.109 1.51 5.841L.057 23.52a.75.75 0 00.924.924l5.704-1.453A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.953-1.355l-.355-.211-3.684.939.955-3.595-.232-.37A9.712 9.712 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+    </a>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/5511982227050" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.109 1.51 5.841L.057 23.52a.75.75 0 00.924.924l5.704-1.453A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.953-1.355l-.355-.211-3.684.939.955-3.595-.232-.37A9.712 9.712 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+</a>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightboxClose">✕</span>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="">
+</div>
+
+</body>
+</html>
