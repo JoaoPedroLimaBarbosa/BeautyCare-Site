@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://beautycareslz.com.br/sitemap.xml
